@@ -4,21 +4,13 @@
  */
 package a.Models;
 
+import a.Models.Direccion.Direccion;
+
 /**
  *
  * @author sebas
  */
-public class Sistema {
-    
-    public boolean validarPesoMax(){
-        return false;
-    }
-    
-    public boolean validarPlanta(){
-        return false;
-    }
-    
-    public void moverAscensor(int siguientePlanta){
-        
-    }
+public class Solicitudes {
+    private int piso;
+    private Direccion direccion;
 }

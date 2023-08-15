@@ -2,7 +2,9 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package a.Models;
+package a.Models.Ascensor;
+
+import a.Models.Direccion.Direccion;
 
 /**
  *
@@ -10,9 +12,8 @@ package a.Models;
  */
 public class Ascensor {
     private int pisoActual;
-    private int pisoSiguiente;
     private int pesoMax;
-    private boolean abajo;
-    private boolean arriba;
+    private int solicitudes;
+    private Direccion estado;
     
 }
