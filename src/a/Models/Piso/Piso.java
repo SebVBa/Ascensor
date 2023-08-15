@@ -9,8 +9,37 @@ package a.Models.Piso;
  * @author sebas
  */
 public class Piso {
-   private int numPiso;
-   private boolean disponible;
-   
-   
+
+    private int numPiso;
+    private boolean disponible;
+
+    public Piso(int numPiso, boolean disponible) {
+        this.numPiso = 1;
+        this.disponible = disponible;
+    }
+
+    public int getNumPiso() {
+        return numPiso;
+    }
+
+    public void setNumPiso(int numPiso) {
+        this.numPiso = numPiso;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
+
+    public void setDisponible(boolean disponible) {
+        this.disponible = disponible;
+    }
+
+    @Override
+    public String toString() {
+        return "Piso{" + "numPiso=" + numPiso + ", disponible=" + disponible + '}';
+    }
+  public boolean estadoDisponibilidad() {
+    return disponible ? true : false;
+}
+
 }
