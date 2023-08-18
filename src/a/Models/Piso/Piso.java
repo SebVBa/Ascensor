@@ -11,6 +11,14 @@ package a.Models.Piso;
 public class Piso {
    private int numPiso;
    private boolean disponible;
+
+    public int getNumPiso() {
+        return numPiso;
+    }
+
+    public boolean isDisponible() {
+        return disponible;
+    }
    
    
 }

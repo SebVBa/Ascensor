@@ -12,8 +12,30 @@ import a.Models.Direccion.Direccion;
  */
 public class Ascensor {
     private int pisoActual;
+    private int pesoActual;
     private int pesoMax;
     private int solicitudes;
     private Direccion estado;
+
+    public int getPisoActual() {
+        return pisoActual;
+    }
+
+    public int getPesoActual() {
+        return pesoActual;
+    }
+
+    public int getPesoMax() {
+        return pesoMax;
+    }
+
+    public int getSolicitudes() {
+        return solicitudes;
+    }
+
+    public Direccion getEstado() {
+        return estado;
+    }
+    
     
 }
