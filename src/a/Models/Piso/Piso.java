@@ -38,8 +38,16 @@ public class Piso {
     public String toString() {
         return "Piso{" + "numPiso=" + numPiso + ", disponible=" + disponible + '}';
     }
-  public boolean estadoDisponibilidad() {
-    return disponible ? true : false;
-}
 
+    public boolean estadoDisponibilidad() {
+        return disponible ? true : false;
+    }
+
+    public boolean ValidarNumPiso() {
+        if (this.numPiso > 10) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
