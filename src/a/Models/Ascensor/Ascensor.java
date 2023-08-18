@@ -13,6 +13,7 @@ import a.Models.Direccion.Direccion;
 public class Ascensor {
 
     private int pisoActual;
+    private int pesoActual;
     private int pesoMax;
     private int solicitudes;
     private Direccion estado;
@@ -79,5 +80,5 @@ public class Ascensor {
     public void detenerAscensor() {
         estado = Direccion.estatico;
     }
-
+   
 }

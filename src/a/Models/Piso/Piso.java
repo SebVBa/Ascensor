@@ -10,11 +10,9 @@ package a.Models.Piso;
  */
 public class Piso {
 
-    private int numPiso;
+   private int numPiso;
+   private boolean disponible;
 
-    public int getNumPiso() {
-        return numPiso;
-    }
 
     public void setNumPiso(int numPiso) {
         this.numPiso = numPiso;

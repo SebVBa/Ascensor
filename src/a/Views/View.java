@@ -17,6 +17,14 @@ public interface View<Type> {
         frm.setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
     
+    public static void maximizeIfrm(JInternalFrame frm){
+        try {
+                frm.setMaximum(true);
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+    }
+    
     public static void showInternal(JDesktopPane desk,JInternalFrame frm){
         int desktopWidth = desk.getWidth();
         int desktopHeight = desk.getHeight();
@@ -34,5 +42,4 @@ public interface View<Type> {
     public void displayAll(Type[] regs);
     public void displayMessage(String msj);
     public boolean displayConfirmMessage(String msj);
-    public void displayErrorMessage(String msj); 
 }
