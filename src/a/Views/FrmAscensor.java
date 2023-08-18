@@ -4,6 +4,7 @@
  */
 package a.Views;
 
+
 /**
  *
  * @author sebas
@@ -15,6 +16,7 @@ public class FrmAscensor extends javax.swing.JFrame {
      */
     public FrmAscensor() {
         initComponents();
+        View.maximize(this);
     }
 
     /**
