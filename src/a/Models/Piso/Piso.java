@@ -26,4 +26,15 @@ public class Piso {
         return "Piso{" + "numPiso=" + numPiso + '}';
     }
 
+    public boolean estadoDisponibilidad() {
+        return disponible ? true : false;
+    }
+
+    public boolean ValidarNumPiso() {
+        if (this.numPiso > 10) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
